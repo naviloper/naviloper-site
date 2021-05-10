@@ -1,6 +1,9 @@
 # ./docker/php/Dockerfile
 FROM php:7.4-fpm
 
+RUN groupadd -g 1000 -o naviloper
+RUN useradd -m -u 1000 -g 1000 -o -s /bin/bash naviloper
+
 RUN docker-php-ext-configure opcache --enable-opcache \
     && docker-php-ext-install opcache
 
