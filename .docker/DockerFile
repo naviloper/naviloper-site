@@ -1,0 +1,37 @@
+# ./docker/php/Dockerfile
+FROM php:7.4-fpm
+
+RUN groupadd -g 1000 -o naviloper
+RUN useradd -m -u 1000 -g 1000 -o -s /bin/bash naviloper
+
+RUN docker-php-ext-configure opcache --enable-opcache \
+    && docker-php-ext-install opcache
+
+RUN docker-php-ext-install pdo_mysql
+
+RUN pecl install apcu
+
+RUN apt-get update && \
+apt-get install -y \
+        libzip-dev \
+        libpng-dev
+
+RUN docker-php-ext-install gd
+RUN docker-php-ext-install zip
+RUN docker-php-ext-enable apcu
+
+#installing composer
+RUN curl -sS https://getcomposer.org/installer | tee composer-setup.php \
+    && php composer-setup.php && rm composer-setup.php* \
+    && chmod +x composer.phar && mv composer.phar /usr/bin/composer
+
+# Install Node 14
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - \
+    && apt-get install -y nodejs
+
+WORKDIR /usr/src/app
+COPY --chown=1000:1000 ./ /usr/src/app
+RUN mkdir /.composer && chown -R 1000:1000 /.composer
+RUN mkdir /.npm && chown -R 1000:1000 /.npm
+
+#  && rm -rf "$(composer config cache-dir)" "$(composer config data-dir)"
