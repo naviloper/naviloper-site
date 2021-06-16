@@ -39,10 +39,3 @@ RUN mkdir /.composer && chown -R 1000:1000 /.composer
 RUN mkdir /.npm && chown -R 1000:1000 /.npm
 
 #  && rm -rf "$(composer config cache-dir)" "$(composer config data-dir)"
-
-USER naviloper
-RUN composer global require drush/drush:dev-master
-
-USER root
-RUN ln -s /home/naviloper/.composer/vendor/bin/drush /usr/bin/drush
-RUN drush --version
