@@ -1,6 +1,9 @@
 # ./docker/php/Dockerfile
 FROM php:7.4-fpm
 
+COPY ./.docker/php/php.ini-development $PHP_INI_DIR/php.ini
+#COPY ./.docker/php/php.ini-production $PHP_INI_DIR/php.ini
+
 RUN groupadd -g 1000 -o naviloper
 RUN useradd -m -u 1000 -g 1000 -o -s /bin/bash naviloper
 
@@ -14,7 +17,8 @@ RUN pecl install apcu
 RUN apt-get update && \
 apt-get install -y \
         libzip-dev \
-        libpng-dev
+        libpng-dev \
+        git
 
 RUN docker-php-ext-install gd
 RUN docker-php-ext-install zip
