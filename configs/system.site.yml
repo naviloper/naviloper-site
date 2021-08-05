@@ -1,0 +1,14 @@
+uuid: b779ad8d-fcfe-4cf4-83da-70db5620f78c
+name: Naviloper
+mail: naviloper@gmail.com
+slogan: 'Navid as a Developer'
+page:
+  403: ''
+  404: ''
+  front: /blog
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

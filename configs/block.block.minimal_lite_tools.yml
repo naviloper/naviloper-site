@@ -1,0 +1,27 @@
+uuid: 0a60614e-4704-4b08-b83a-14b2c42cb057
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - minimal_lite
+_core:
+  default_config_hash: KoRjqZ4uFwa2Z5sdcqZiGiLGGP8DQ2AB-j5DO7Pqbkk
+id: minimal_lite_tools
+theme: minimal_lite
+region: hidden_blocks_collection
+weight: -5
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

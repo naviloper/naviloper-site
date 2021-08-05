@@ -1,0 +1,9 @@
+uuid: bb1959dc-0e68-4f38-ae90-421ffd802d6c
+langcode: fa
+status: true
+dependencies: {  }
+id: fa
+label: فارسی
+direction: rtl
+weight: 1
+locked: false
