@@ -1,0 +1,20 @@
+uuid: 98a107b9-142d-4f38-8023-4e8bf4e1d8d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - minimal_lite
+id: languageswitcher
+theme: minimal_lite
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }

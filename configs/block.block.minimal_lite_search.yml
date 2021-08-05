@@ -1,0 +1,23 @@
+uuid: 0de756cc-478f-4bdd-ae8c-1085afd3c1d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - minimal_lite
+_core:
+  default_config_hash: WbhSe-cCmF2r2xOAD3nwbTctFomusFcqAQmFlgLVwyw
+id: minimal_lite_search
+theme: minimal_lite
+region: header_third
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

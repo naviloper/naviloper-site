@@ -1,0 +1,27 @@
+uuid: fc3fcefd-8036-4a5b-8ccf-3d0933655541
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - minimal_lite
+_core:
+  default_config_hash: C2irQeqa6HpoRluqc2glM-laArdOQZZsR0T45UuMPGY
+id: minimal_lite_account_menu
+theme: minimal_lite
+region: hidden_blocks_collection
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 31c3b8c1-a675-4af3-8c43-635ad6bd2ccc
+langcode: en
+status: true
+dependencies:
+  module:
+    - dropdown_language
+  theme:
+    - minimal_lite
+id: dropdownlanguage
+theme: minimal_lite
+region: hidden_blocks_collection
+weight: -3
+provider: null
+plugin: 'dropdown_language:language_interface'
+settings:
+  id: 'dropdown_language:language_interface'
+  label: 'Dropdown Language'
+  provider: dropdown_language
+  label_display: '0'
+  labels: null
+visibility: {  }

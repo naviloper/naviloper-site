@@ -1,0 +1,22 @@
+uuid: dbb7ae42-7308-4dde-98cd-309815c203f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - minimal_lite
+_core:
+  default_config_hash: 3zidmmcAXvoasuD_T9DXkpfvyiezaISYv4psvo_Y8ZM
+id: minimal_lite_content
+theme: minimal_lite
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
