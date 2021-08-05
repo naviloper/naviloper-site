@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cdcc89f1f708e20ff84aff3c382520d9",
+    "content-hash": "3fe0b7d6f00e3e0794c071ee3c9debfb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1852,6 +1852,96 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/dropdown_language",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/dropdown_language.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dropdown_language-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "5c467a4c42a8d12a2ff73d7c7464250bc692c356"
+            },
+            "require": {
+                "drupal/core": "^9",
+                "php": "^7.3||^8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1612727737",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Carpenter",
+                    "homepage": "https://www.drupal.org/user/297907",
+                    "email": "dropdown-language@goodscott.com"
+                }
+            ],
+            "description": "Dropdown Language Switcher. https://www.drupal.org/project/dropdown_language",
+            "homepage": "https://www.drupal.org/project/dropdown_language",
+            "support": {
+                "source": "https://git.drupalcode.org/project/dropdown_language"
+            }
+        },
+        {
+            "name": "drupal/language_switcher_extended",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/language_switcher_extended.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/language_switcher_extended-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "a2191c3623d6a77b950059c43fdba5024a578a8c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1626451793",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "szeidler",
+                    "homepage": "https://www.drupal.org/user/767652"
+                }
+            ],
+            "description": "Provides additional processors for the Language Switcher block links.",
+            "homepage": "https://www.drupal.org/project/language_switcher_extended",
+            "support": {
+                "source": "https://git.drupalcode.org/project/language_switcher_extended"
             }
         },
         {
