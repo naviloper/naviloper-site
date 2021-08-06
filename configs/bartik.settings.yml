@@ -7,4 +7,6 @@ logo:
   use_default: false
   path: 'public://naviloper-logo.png'
 favicon:
-  use_default: true
+  use_default: false
+  path: 'public://favicon.ico'
+  mimetype: image/vnd.microsoft.icon
